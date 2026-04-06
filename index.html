@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>My Portfolio</h2>
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('achievements')">Achievements</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('gallery')">Gallery</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  <button onclick="toggleDarkMode()">🌙</button>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section active">
+  <img src="assets/images/profile.jpg" class="profile">
+  <h1>Your Name</h1>
+  <p>BTech Computer Science Student passionate about AI and Web Development.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p><b>Education:</b> BTech CSE</p>
+  <p><b>Interests:</b> AI, Coding, Design</p>
+  <p><b>Goals:</b> Become Software Engineer</p>
+  <p><b>Strengths:</b> Problem solving, creativity</p>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <h2>Achievements & Certificates</h2>
+
+  <div class="card">
+    <h3>Coursera Certificate</h3>
+    <p>Completed AI Course</p>
+    <a href="assets/certificates/coursera.pdf">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Netcad Certificate</h3>
+    <p>Networking fundamentals</p>
+    <a href="assets/certificates/netcad.pdf">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Yuva AI Certificate</h3>
+    <p>AI for All program</p>
+    <a href="assets/certificates/yuva.pdf">View</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>AI4A Project</h3>
+    <p>AI-based solution for real-world problem</p>
+    <img src="assets/images/project1.png">
+  </div>
+
+  <div class="card">
+    <h3>Design Thinking Project</h3>
+    <p>Smart Waste Management</p>
+    <img src="assets/images/project2.png">
+  </div>
+
+  <div class="card">
+    <h3>ACE Project</h3>
+    <p>Applied coding experience project</p>
+    <img src="assets/images/project3.png">
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+
+  <img src="assets/images/cert1.jpg">
+  <img src="assets/images/cert2.jpg">
+  <img src="assets/images/project1.png">
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <p>Email: your@email.com</p>
+  <p>Phone: 1234567890</p>
+  <p>LinkedIn: your link</p>
+  <p>GitHub: your link</p>
+</section>
+
+<footer>
+  <p>© 2026 Student Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
